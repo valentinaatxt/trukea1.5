@@ -1,0 +1,58 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/agregar_dinero.css' %}">
+    <title>Agregar dinero</title>
+    <link rel="icon" href="imgs/logo-solo.ico">
+</head>
+
+<body>
+    <header>
+        <picture></picture>
+        <span class="span-inicio span-header">AGREGAR DINERO</span>
+        <span class="span-cliente span-header">Cliente</span>
+        <picture></picture>
+    </header>
+
+    <nav>
+        <a href="{% url 'InicioCliente' %}" class="ancle-inicio"></a>
+        <a href="{% url 'EnviarDinero' %}" class="ancle-enviar_dinero"></a>
+        <a href="{% url 'ConsultarListaTransacciones' %}" class="ancle-consulta_lista_transacciones"></a>
+        <a href="{% url 'ClienteTransaccion' %}" class="ancle-consulta_transaccion"></a>
+        <a href="{% url 'EliminarDestinatario' %}" class="ancle-eliminar_destinatario"></a>
+        <a href="{% url 'AgregarDestinatario' %}" class ="ancle-agregar_destinatario"></a>
+        <a href="{% url 'AgregarDinero' %}" class="ancle-agregar_dinero"></a>
+    </nav>
+    </nav>
+
+    <main>
+        <section>
+            <p>Agregar dinero</p>
+            <form action="{% url 'AgregarDinero' %}" method="post">
+                {% csrf_token %}
+                <label for="monto_local" class="label-izquierda label-monto_local">Monto</label>
+                <input type="number" id="monto" name="monto" class="input-izquierda" placeholder="228.56" required>
+
+                <label for="fecha_agregar" class="label-derecha label-fecha">Fecha</label>
+                <input type="date" id="fecha_agregar" name="fecha" class="input-derecha" required>
+
+                <input type="submit" value="Agregar" class="submit-button"/>
+
+            </form>
+
+        </section>
+
+
+
+    </main>
+
+
+</body>
+
+</html>

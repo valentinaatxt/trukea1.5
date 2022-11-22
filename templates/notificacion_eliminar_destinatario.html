@@ -1,0 +1,44 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../trukea/static/css/notificación_eliminar_destinatario.css">
+    <title>Eliminar destinatario</title>
+    <link rel="icon" href="imgs/logo-solo.ico">
+</head>
+
+<body>
+    <header>
+        <picture></picture>
+        <span class="span-inicio span-header">ELIMINAR DESTINATARIO</span>
+        <span class="span-cliente span-header">Cliente</span>
+        <picture></picture>
+    </header>
+
+    <nav>
+        <a href="{% url 'InicioCliente' %}" class="ancle-inicio"></a>
+        <a href="{% url 'EnviarDinero' %}" class="ancle-enviar_dinero"></a>
+        <a href="{% url 'ConsultarListaTransacciones' %}" class="ancle-consulta_lista_transacciones"></a>
+        <a href="{% url 'ClienteTransaccion' %}" class="ancle-consulta_transaccion"></a>
+        <a href="{% url 'EliminarDestinatario' %}" class="ancle-eliminar_destinatario"></a>
+        <a href="{% url 'AgregarDestinatario' %}" class ="ancle-agregar_destinatario"></a>
+        <a href="{% url 'AgregarDinero' %}" class="ancle-agregar_dinero"></a>
+    </nav>
+
+    <main>
+        <section>
+            <p>Eliminar destinatario</p>
+            <p>Destinatario:</p>
+            <a href="./eliminar_destinatario.html" class="cancelar-button">Cancelar</a>
+            <input type="submit" value="Eliminar" class="submit-button"/>
+        </section>
+    </main>
+
+</body>
+
+</html>

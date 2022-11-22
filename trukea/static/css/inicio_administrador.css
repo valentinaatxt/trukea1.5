@@ -1,0 +1,217 @@
+:root {
+    --fondo-oscuro: rgba(39, 24, 126, 1);
+    --fondo-claro: rgba(146, 162, 254, 1);
+    --fondo-botones: rgba(255, 155, 44, 1);
+    --fondo-formulario: rgba(217, 217, 217, 0.5);
+    --fondo-campos: rgba(217, 217, 217, 0.699999988079071);
+    --fondo-otros: rgba(150, 71, 255, 0.25999999046325684);
+    --texto: rgba(0, 0, 0, 1);
+    --textos-alternos: rgba(255, 255, 255, 1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-family: Noto Serif;
+    font-weight: SemiBold;
+    text-decoration: none;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--fondo-claro);
+}
+
+header {
+    width: 100vw;
+    height: 102px;
+    background: var(--fondo-oscuro);
+    top: 0px;
+    left: 0px;
+}
+
+nav {
+    width: 84px;
+    height: 591px;
+    top: 120px;
+    left: 11px;
+}
+
+main {
+    width: 1430px;
+    height: 611px;
+    top: 102px;
+    left: 105px;
+}
+
+header picture:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    background: url("../imgs/administrador.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 21px;
+    left: 1440px;
+}
+
+header picture:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    background: url("../imgs/logo-solo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 11px;
+    left: 25px;
+}
+
+a {
+    width: 50px;
+    height: 50px;
+    left: 14px;
+    overflow: hidden;
+}
+
+.ancle-inicio {
+    background: url("../imgs/inicio-activo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 11px;
+}
+
+.ancle-enviar_dinero {
+    background: url("../imgs/lista-monedas-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 96px;
+}
+
+.ancle-consulta_lista_transacciones {
+    background: url("../imgs/editar-tarifa-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 181px;
+}
+
+.ancle-consulta_transaccion {
+    background: url("../imgs/habilitar-deshabilitar-moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 266px;
+}
+
+.ancle-eliminar_destinatario {
+    background: url("../imgs/consultar-lista-transacciones-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 351px;
+}
+
+.ancle-agregar_destinatario {
+    background: url("../imgs/agregar-moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 436px;
+}
+
+.ancle-agregar_dinero {
+    background: url("../imgs/editar_moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 521px;
+}
+
+section {
+    border-radius: 36px;
+    height: 560px;
+    width: 634px;
+}
+
+.section-transacciones {
+    background: var(--fondo-formulario);
+    top: 34px;
+    left: 63px;
+}
+
+.section-derecha {
+    background: var(--fondo-formulario);
+    left: 765px;
+}
+
+.section-mensajes {
+    top: 36px;
+}
+
+p {
+    width: 350px;
+    height: 80px;
+    color: var(--texto);
+    font-size: 3.6rem;
+    border-radius: 36px;
+    padding-top: 16px;
+    left: 150px;
+    top: 20px;
+}
+
+.p-transacciones {
+    background: var(--fondo-formulario);
+}
+
+.p-mensajes {
+    background: var(--fondo-formulario);
+}
+
+span {
+    color: var(--textos-alternos);
+}
+
+.span-inicio {
+    width: 352px;
+    top: 10px;
+    left: 518px;
+    font-size: 6rem;
+    letter-spacing: 2rem;
+}
+
+.span-cliente {
+    width: 250px;
+    top: 26px;
+    left: 1177px;
+    font-size: 3.6rem;
+}
+
+.estadistica1 {
+    width: 400px;
+    height: 400px;
+    background: url("../imgs/Estadistica-1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 120px;
+    left: 100px;
+}
+
+.estadistica2 {
+    width: 400px;
+    height: 400px;
+    background: url("../imgs/Estadistica-2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 120px;
+    left: 100px;
+}

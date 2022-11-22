@@ -1,0 +1,63 @@
+{%load static%}
+<!DOCTYPE html>
+<html lange="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/admin_editar_moneda.css' %}">
+    <title>Agregar dinero</title>
+    <link rel="icon" href="imgs/logo-solo.ico">
+</head>
+
+<body>
+    <header>
+        <picture></picture>
+        <span class="span-inicio span-header">EDITAR MONEDA</span>
+        <span class="span-cliente span-header">Administrador</span>
+        <picture></picture>
+    </header>
+
+    <nav>
+        <a href="{% url 'InicioAdministrador' %}" class="ancle-inicio"></a>
+        <a href="{% url 'ConsultarListaMonedas' %}" class="ancle-enviar_dinero"></a>
+        <a href="{% url 'EditarMoneda' %}" class="ancle-consulta_lista_transacciones"></a>
+        <a href="{% url 'HabilitarDeshabilitarMoneda' %}" class="ancle-consulta_transaccion"></a>
+        <a href="{% url 'ConsultarListaTransacciones' %}" class="ancle-eliminar_destinatario"></a>
+        <a href="{% url 'AgregarMonedaPlataforma' %}" class="ancle-agregar_destinatario"></a>
+        <a href="{% url 'AdminEditarMoneda' %}" class="ancle-agregar_dinero"></a>
+    </nav>
+
+    <main>
+        <section>
+            <p>Editar moneda</p>
+            <form action="">
+
+                <label for="fecha_agregar" class="label-izquierda label-fecha">Moneda</label>
+                <input list="fechas_agregar" id="fecha_agregar" name="moneda_local" class="input-izquierda" placeholder="COP" required>
+                <datalist id="fechas_agregar">
+                    <option value="COP">Peso colombiano</option>
+                    <option value="AUD">Dólar australiano</option>
+                    <option value="GBP">Libra esterlina</option>
+                    <option value="USD">Dólar américano</option>
+                </datalist>
+
+                <label for="monto_local" class="label-derecha label-monto_local">Tasa</label>
+                <input type="number" id="monto_local" name="moneda_local" class="input-derecha" required>
+
+                <input type="submit" value="Modificar" class="submit-button"/>
+
+            </form>
+
+        </section>
+
+
+
+    </main>
+
+
+</body>
+
+</html>

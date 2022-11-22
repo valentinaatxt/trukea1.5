@@ -1,0 +1,125 @@
+:root {
+    --fondo-oscuro: rgba(39, 24, 126, 1);
+    --fondo-botones: rgba(255, 155, 44, 1);
+    --fondo-formulario: rgba(217, 217, 217, 0.5);
+    --fondo-campos: rgba(217, 217, 217, 0.699999988079071);
+    --texto: rgba(0, 0, 0, 1);
+    --textos-alternos: rgba(255, 255, 255, 1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-family: Noto Serif;
+    font-weight: SemiBold;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fondo-oscuro);
+}
+
+picture {
+    width: 700px;
+    height: 700px;
+    background: url("../imgs/logo-completo.png");
+    background-position: center center;
+    background-size: cover;
+    top: 6px;
+    left: 53px;
+}
+
+form {
+    width: 514px;
+    height: 545px;
+    background: var(--fondo-formulario);
+    top: 84px;
+    left: 896px;
+    border-radius: 36px;
+}
+
+label {
+    color: var(--texto);
+    font-size: 4rem;
+    text-align: left;
+    left: 46px;
+}
+
+.label-correo {
+    top: 23px;
+}
+
+.label-contrasena {
+    top: 196px;
+}
+
+input[type=email],input[type=password] {
+    font-size: 2rem;
+    width: 416px;
+    height: 65px;
+    background: var(--fondo-campos);
+    border-radius: 20px;
+    border: none;
+    padding-left: 12px;
+    left: 46px;
+}
+
+#correo {
+    top: 99px;
+}
+
+#contrasena {
+    top: 276px;
+}
+
+a {
+    width: 386px;
+    height: 24px;
+    color: var(--texto);
+    font-family: Noto Serif;
+    font-weight: SemiBold;
+    font-size: 2rem;
+    text-align: center;
+    left: 61px;
+}
+
+a {
+    width: 297px;
+    height: 64px;
+    background: var(--fondo-botones);
+    top: 400px;
+    left: 108px;
+    border-radius: 60px;
+    font-size: 2.8rem;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+.ancle1 {
+    top: 369px;
+}
+
+.ancle2 {
+    top: 401px;
+}
+
+#boton {
+    width: 297px;
+    height: 64px;
+    background: var(--fondo-botones);
+    top: 454px;
+    left: 108px;
+    border-radius: 60px;
+    font-size: 2.8rem;
+    cursor: pointer;
+    border: none;
+}

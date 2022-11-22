@@ -1,0 +1,197 @@
+:root {
+    --fondo-oscuro: rgba(39, 24, 126, 1);
+    --fondo-botones: rgba(255, 155, 44, 1);
+    --fondo-formulario: rgba(217, 217, 217, 0.5);
+    --fondo-campos: rgba(217, 217, 217, 0.699999988079071);
+    --texto: rgba(0, 0, 0, 1);
+    --textos-alternos: rgba(255, 255, 255, 1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-family: Noto Serif;
+    font-weight: SemiBold;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fondo-oscuro);
+}
+
+form {
+    width: 100vw;
+    height: 400px;
+    top: 204px;
+}
+
+section {
+    width: 438px;
+    height: 400px;
+    background: var(--fondo-formulario);
+    border-radius: 36px;
+}
+
+.section-izquierda {
+    left: 46px;
+}
+
+.section-centro {
+    left: 549px;
+}
+
+.section-derecha {
+    left: 1052px;
+}
+
+label {
+    width: 336px;
+    color: var(--texto);
+    font-family: Noto Serif;
+    font-weight: SemiBold;
+    font-size: 2.4rem;
+    text-align: center;
+    left: 51px;
+}
+
+.label-primero {
+    top: 6px;
+}
+
+.label-segundo {
+    top: 100px;
+}
+
+.label-tercero {
+    top: 193px;
+}
+
+.label-cuarto {
+    top: 289px;
+}
+
+.label-pais {
+    width: 150px;
+}
+
+.label-ciudad {
+    left: 237px;
+    width: 150px;
+}
+
+input {
+    width: 336px;
+    height: 48px;
+    background: var(--fondo-campos);
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    left: 51px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.input-primero {
+    top: 48px;
+}
+
+.input-segundo {
+    top: 140px;
+}
+
+.input-tercero {
+    top: 234px;
+}
+
+.input-cuarto {
+    top: 330px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   
+    margin: 0;
+}
+
+#pais {
+    width: 180px;
+    left: 32px;
+}
+
+#ciudad {
+    left: 237px;
+    width: 150px;
+}
+
+#tipo_documento,
+#moneda {
+    width: 160px;
+    left: 140px;
+    padding-left: 28px;
+}
+
+#numero_documento,
+#fecha_expedicion,
+#contrasena,
+#celular {
+    width: 248px;
+    left: 96px;
+}
+
+picture {
+    width: 200px;
+    height: 200px;
+    background: url("../imgs/logo-completo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 0px;
+    left: 668px;
+}
+
+a {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.anchor-return-arrow {
+    width: 50px;
+    height: 50px;
+    background: url("../imgs/return-naranja.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 60px;
+    left: 78px;
+    overflow: hidden;
+}
+
+.anchor-return-text {
+    width: 260px;
+    color: var(--textos-alternos);
+    top: 64px;
+    left: 128px;
+    font-size: 2.8rem;
+}
+
+
+.submit-button {
+    width: 248px;
+    height: 55px;
+    background: var(--fondo-botones);
+    top: 312px;
+    left: 644px;
+    border-radius: 60px;
+    color: var(--texto);
+    cursor: pointer;
+    border: none;
+    font-size: 2.4rem;
+}

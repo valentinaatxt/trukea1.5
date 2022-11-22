@@ -1,0 +1,220 @@
+:root {
+    --fondo-oscuro: rgba(39, 24, 126, 1);
+    --fondo-claro: rgba(146, 162, 254, 1);
+    --fondo-botones: rgba(255, 155, 44, 1);
+    --fondo-formulario: rgba(217, 217, 217, 0.5);
+    --fondo-campos: rgba(217, 217, 217, 0.699999988079071);
+    --fondo-otros: rgba(150, 71, 255, 0.25999999046325684);
+    --texto: rgba(0, 0, 0, 1);
+    --textos-alternos: rgba(255, 255, 255, 1);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Noto Serif;
+    font-weight: SemiBold;
+    text-decoration: none;
+    text-align: center;
+}
+
+body {
+    background-color: var(--fondo-claro);
+}
+
+header,
+header picture:nth-child(1),
+header picture:nth-child(4),
+nav,
+a,
+main,
+p,
+table,
+span {
+    position: absolute;
+}
+
+header {
+    width: 100vw;
+    height: 102px;
+    background: var(--fondo-oscuro);
+    top: 0px;
+    left: 0px;
+}
+
+header picture:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    background: url("../imgs/administrador.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 21px;
+    left: 1440px;
+}
+
+header picture:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    background: url("../imgs/logo-solo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 11px;
+    left: 25px;
+}
+
+nav {
+    width: 84px;
+    height: 591px;
+    top: 120px;
+    left: 11px;
+}
+
+a {
+    width: 50px;
+    height: 50px;
+    left: 14px;
+    overflow: hidden;
+}
+
+.ancle-inicio {
+    background: url("../imgs/inicio-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 11px;
+}
+
+.ancle-enviar_dinero {
+    background: url("../imgs/lista-monedas-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 96px;
+}
+
+.ancle-consulta_lista_transacciones {
+    background: url("../imgs/editar-tarifa-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 181px;
+}
+
+.ancle-consulta_transaccion {
+    background: url("../imgs/habilitar-deshabilitar-moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 266px;
+}
+
+.ancle-eliminar_destinatario {
+    background: url("../imgs/consultar-lista-transacciones-activo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 351px;
+}
+
+.ancle-agregar_destinatario {
+    background: url("../imgs/agregar-moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 436px;
+}
+
+.ancle-agregar_dinero {
+    background: url("../imgs/editar_moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 521px;
+}
+
+main {
+    background-color: var(--fondo-formulario);
+    top: 138px;
+    left: 250px;
+    width: 1180px;
+    height: 555px;
+    border-radius: 36px;
+}
+
+p {
+    top: 34px;
+    left: 300px;
+    width: 600px;
+    font-size: 4rem;
+    padding-top: 10px;
+    height: 72px;
+    border-radius: 28px;
+    background: var(--fondo-formulario);
+    color: var(--texto);
+}
+
+table {
+    table-layout: fixed;
+    width: 1000px;
+    height: 390px;
+    border-collapse: collapse;
+    left: 100px;
+    top: 130px;
+    background-color: var(--fondo-formulario);
+    text-indent: initial;
+    text-align: center;
+    border-radius: 24px;
+}
+
+th {
+    font-size: 1.6rem;
+    display: table-cell;
+    vertical-align: inherit;
+    text-align: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+td {
+    font-size: 1.2rem;
+    border-top: 1px solid black;
+}
+
+thead th:nth-child(1) {
+    width: 100px;
+}
+
+thead th:nth-child(2) {
+    width: 100px;
+}
+
+thead th:nth-child(3),
+thead th:nth-child(4) {
+    width: 250px;
+}
+
+span {
+    color: var(--textos-alternos);
+}
+
+.span-inicio {
+    width: 1000px;
+    top: 16px;
+    left: 160px;
+    font-size: 5rem;
+    letter-spacing: 2rem;
+}
+
+.span-cliente {
+    width: 250px;
+    top: 26px;
+    left: 1177px;
+    font-size: 3.6rem;
+}

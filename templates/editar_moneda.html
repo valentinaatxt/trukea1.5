@@ -1,0 +1,77 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/editar_moneda.css' %}">
+    <title>Editar tarifa</title>
+    <link rel="icon" href="{% static 'imgs/logo-solo.ico' %}">
+</head>
+
+<body>
+    <header>
+        <picture></picture>
+        <span class="span-inicio">EDITAR TARIFA</span>
+        <span class="span-cliente">Administrador</span>
+        <picture></picture>
+    </header>
+
+    <nav>
+        <a href="{% url 'InicioAdministrador' %}" class="ancle-inicio"></a>
+        <a href="{% url 'ConsultarListaMonedas' %}" class="ancle-enviar_dinero"></a>
+        <a href="{% url 'EditarMoneda' %}" class="ancle-consulta_lista_transacciones"></a>
+        <a href="{% url 'HabilitarDeshabilitarMoneda' %}" class="ancle-consulta_transaccion"></a>
+        <a href="{% url 'ConsultarListaTransacciones' %}" class="ancle-eliminar_destinatario"></a>
+        <a href="{% url 'AgregarMonedaPlataforma' %}" class="ancle-agregar_destinatario"></a>
+        <a href="{% url 'AdminEditarMoneda' %}" class="ancle-agregar_dinero"></a>
+    </nav>
+
+    <main>
+        <form action="" class="section-transacciones">
+
+            <p class="p-transacciones">Tarifas de envío</p>
+
+            <span class="moneda">Código</span>
+            <span class="codigo">Valor fijo</span>
+            <span class="tasa">Porcentaje de transacción</span>
+
+            <section class="moneda1 fields">
+                <span class="tipo">COP</span>
+                <input type="number" class="tipo_codigo"></input>
+                <input type="number" class="tipo_tasa"></input>
+            </section>
+
+            <section class="moneda2 fields">
+                <span class="tipo">AUD</span>
+                <input type="number" class="tipo_codigo"></input>
+                <input type="number" class="tipo_tasa"></input>
+            </section>
+
+            <section class="moneda3 fields">
+                <span class="tipo">GBP</span>
+                <input type="number" class="tipo_codigo"></input>
+                <input type="number" class="tipo_tasa"></input>
+            </section>
+
+            <section class="moneda4 fields">
+                <span class="tipo">USD</span>
+                <input type="number" class="tipo_codigo"></input>
+                <input type="number" class="tipo_tasa"></input>
+            </section>
+
+            <button type="submit">
+                Modificar
+            </button>
+
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>

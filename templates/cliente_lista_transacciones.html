@@ -1,0 +1,151 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/cliente_lista_transacciones.css' %}">
+    <title>Lista de transacciones</title>
+    <link rel="icon" href="imgs/logo-solo.ico">
+</head>
+
+<body>
+
+    <header>
+        <picture></picture>
+        <span class="span-inicio span-header">LISTA TRANSACCIONES</span>
+        <span class="span-cliente span-header">Cliente</span>
+        <picture></picture>
+    </header>
+
+    <nav>
+        <a href="{% url 'InicioCliente' %}" class="ancle-inicio"></a>
+        <a href="{% url 'EnviarDinero' %}" class="ancle-enviar_dinero"></a>
+        <a href="{% url 'ConsultarListaTransacciones' %}" class="ancle-consulta_lista_transacciones"></a>
+        <a href="{% url 'ClienteTransaccion' %}" class="ancle-consulta_transaccion"></a>
+        <a href="{% url 'EliminarDestinatario' %}" class="ancle-eliminar_destinatario"></a>
+        <a href="{% url 'AgregarDestinatario' %}" class ="ancle-agregar_destinatario"></a>
+        <a href="{% url 'AgregarDinero' %}" class="ancle-agregar_dinero"></a>
+    </nav>
+
+    <main>
+        <p>Lista de transacciones</p>
+
+        <table summary="Lista de transacciones del cliente">
+            <thead>
+                <tr>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Monto en moneda local</th>
+                    <th scope="col">Monto en moneda destino</th>
+                    <th scope="col">Destinatario</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+                <tr>
+                    <td>20/09/2022</td>
+                    <td>Envío</td>
+                    <td>224900</td>
+                    <td>450</td>
+                    <td>Valeria Tavera</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+
+</body>
+
+</html>

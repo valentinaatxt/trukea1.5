@@ -1,0 +1,48 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/consultar_lista_monedas.css' %}">
+    <title>Lista monedas</title>
+    <link rel="icon" href="{% static 'imgs/logo-solo.ico' %}">
+</head>
+
+<body>
+    <header>
+        <picture></picture>
+        <span class="span-inicio">LISTA DE MONEDAS</span>
+        <span class="span-cliente">Administrador</span>
+        <picture></picture>
+    </header>
+
+    <nav>
+        <a href="{% url 'InicioAdministrador' %}" class="ancle-inicio"></a>
+        <a href="{% url 'EnviarDinero' %}" class="ancle-enviar_dinero"></a>
+        <a href="{% url 'ConsultarListaTransacciones' %}" class="ancle-consulta_lista_transacciones"></a>
+        <a href="{% url 'ClienteTransaccion' %}" class="ancle-consulta_transaccion"></a>
+        <a href="{% url 'AgregarMonedaPlataforma' %}" class="ancle-agregar_destinatario"></a>
+        <a href="{% url 'EditarMoneda' %}" class="ancle-agregar_dinero"></a>
+    </nav>
+
+    <main>
+        <section class="section-transacciones">
+
+            <p class="p-transacciones">Lista de monedas</p>
+                {% for x in listatotal %}
+                <li>{{listatotal}}</li>
+                {% endfor %}
+            
+
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>

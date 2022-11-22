@@ -1,0 +1,262 @@
+:root {
+    --fondo-oscuro: rgba(39, 24, 126, 1);
+    --fondo-claro: rgba(146, 162, 254, 1);
+    --fondo-botones: rgba(255, 155, 44, 1);
+    --fondo-formulario: rgba(217, 217, 217, 0.5);
+    --fondo-campos: rgba(217, 217, 217, 0.699999988079071);
+    --fondo-otros: rgba(150, 71, 255, 0.25999999046325684);
+    --texto: rgba(0, 0, 0, 1);
+    --textos-alternos: rgba(255, 255, 255, 1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-family: Noto Serif;
+    font-weight: SemiBold;
+    text-decoration: none;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--fondo-claro);
+}
+
+header {
+    width: 100vw;
+    height: 102px;
+    background: var(--fondo-oscuro);
+    top: 0px;
+    left: 0px;
+}
+
+nav {
+    width: 84px;
+    height: 591px;
+    top: 120px;
+    left: 11px;
+}
+
+main {
+    width: 1430px;
+    height: 611px;
+    top: 102px;
+    left: 105px;
+}
+
+header picture:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    background: url("../imgs/administrador.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 21px;
+    left: 1440px;
+}
+
+header picture:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    background: url("../imgs/logo-solo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 11px;
+    left: 25px;
+}
+
+a {
+    width: 50px;
+    height: 50px;
+    left: 14px;
+    overflow: hidden;
+}
+
+.ancle-inicio {
+    background: url("../imgs/inicio-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 11px;
+}
+
+.ancle-enviar_dinero {
+    background: url("../imgs/lista-monedas-activo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 96px;
+}
+
+.ancle-consulta_lista_transacciones {
+    background: url("../imgs/editar-tarifa-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 181px;
+}
+
+.ancle-consulta_transaccion {
+    background: url("../imgs/habilitar-deshabilitar-moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 266px;
+}
+
+.ancle-eliminar_destinatario {
+    background: url("../imgs/consultar-lista-transacciones-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 351px;
+}
+
+.ancle-agregar_destinatario {
+    background: url("../imgs/agregar-moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 436px;
+}
+
+.ancle-agregar_dinero {
+    background: url("../imgs/editar_moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 521px;
+}
+
+section {
+    border-radius: 36px;
+    height: 560px;
+    width: 834px;
+}
+
+.section-transacciones {
+    background: var(--fondo-formulario);
+    top: 34px;
+    left: 280px;
+}
+
+p {
+    width: 450px;
+    height: 80px;
+    color: var(--texto);
+    font-size: 3.6rem;
+    border-radius: 36px;
+    padding-top: 16px;
+    left: 190px;
+    top: 20px;
+}
+
+.p-transacciones {
+    background: var(--fondo-formulario);
+}
+
+.moneda {
+    height: 60px;
+    width: 220px;
+    border-radius: 28px;
+    font-size: 2.8rem;
+    background: var(--fondo-formulario);
+    top: 120px;
+    left: 40px;
+    padding-top: 8px;
+}
+
+.codigo {
+    height: 60px;
+    width: 220px;
+    border-radius: 28px;
+    font-size: 2.8rem;
+    background: var(--fondo-formulario);
+    top: 120px;
+    left: 330px;
+    padding-top: 8px;
+}
+
+.tasa {
+    height: 60px;
+    width: 220px;
+    border-radius: 28px;
+    font-size: 2.8rem;
+    background: var(--fondo-formulario);
+    top: 120px;
+    left: 580px;
+    padding-top: 8px;
+}
+
+.span-inicio {
+    width: 900px;
+    top: 10px;
+    left: 218px;
+    font-size: 6rem;
+    letter-spacing: 2rem;
+    color: var(--textos-alternos);
+}
+
+.span-cliente {
+    width: 250px;
+    top: 26px;
+    left: 1177px;
+    font-size: 3.6rem;
+    color: var(--textos-alternos);
+}
+
+.fields {
+    width: 800px;
+    height: 60px;
+    top: 260px;
+    left: 16px;
+    font-size: 3.6rem;
+    color: var(--textos-alternos);
+    background: var(--fondo-formulario);
+    padding-top: 8px;
+    color: var(--texto);
+}
+
+span {
+    text-align: center;
+}
+
+.moneda1 {
+    top: 200px;
+}
+
+.moneda2 {
+    top: 290px;
+}
+
+.moneda3 {
+    top: 380px;
+}
+
+.moneda4 {
+    top: 470px;
+}
+
+.tipo {
+    left: 12px;
+    font-size: 2.8rem;
+    width: 280px;
+}
+
+.tipo_codigo {
+    left: 400px;
+    font-size: 2.8rem;
+}
+
+.tipo_tasa {
+    left: 622px;
+    font-size: 2.8rem;
+    width: 120px;
+}

@@ -1,0 +1,236 @@
+:root {
+    --fondo-oscuro: rgba(39, 24, 126, 1);
+    --fondo-claro: rgba(146, 162, 254, 1);
+    --fondo-botones: rgba(255, 155, 44, 1);
+    --fondo-formulario: rgba(217, 217, 217, 0.5);
+    --fondo-campos: rgba(217, 217, 217, 0.699999988079071);
+    --fondo-otros: rgba(150, 71, 255, 0.25999999046325684);
+    --texto: rgba(0, 0, 0, 1);
+    --textos-alternos: rgba(255, 255, 255, 1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-family: Noto Serif;
+    font-weight: SemiBold;
+    text-decoration: none;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--fondo-claro);
+}
+
+header {
+    width: 100vw;
+    height: 102px;
+    background: var(--fondo-oscuro);
+    top: 0px;
+    left: 0px;
+}
+
+nav {
+    width: 84px;
+    height: 591px;
+    top: 120px;
+    left: 11px;
+}
+
+main {
+    width: 1430px;
+    height: 611px;
+    top: 102px;
+    left: 105px;
+}
+
+header picture:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    background: url("../imgs/administrador.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 21px;
+    left: 1440px;
+}
+
+header picture:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    background: url("../imgs/logo-solo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 11px;
+    left: 25px;
+}
+
+a {
+    width: 50px;
+    height: 50px;
+    left: 14px;
+    overflow: hidden;
+}
+
+.ancle-inicio {
+    background: url("../imgs/inicio-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 11px;
+}
+
+.ancle-enviar_dinero {
+    background: url("../imgs/lista-monedas-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 96px;
+}
+
+.ancle-consulta_lista_transacciones {
+    background: url("../imgs/editar-tarifa-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 181px;
+}
+
+.ancle-consulta_transaccion {
+    background: url("../imgs/habilitar-deshabilitar-moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 266px;
+}
+
+.ancle-eliminar_destinatario {
+    background: url("../imgs/consultar-lista-transacciones-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 351px;
+}
+
+.ancle-agregar_destinatario {
+    background: url("../imgs/agregar-moneda-inactivo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 436px;
+}
+
+.ancle-agregar_dinero {
+    background: url("../imgs/editar_moneda-activo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 521px;
+}
+
+p,
+label,
+input,
+button {
+    height: 72px;
+    border-radius: 28px;
+    background: var(--fondo-formulario);
+}
+
+section {
+    border-radius: 36px;
+    width: 1080px;
+    height: 367px;
+    background: var(--fondo-formulario);
+    top: 64px;
+    left: 221px;
+}
+
+p {
+    top: 34px;
+    left: 232px;
+    width: 600px;
+    color: var(--texto);
+    font-size: 3.6rem;
+    padding-top: 10px;
+}
+
+span {
+    color: var(--textos-alternos);
+}
+
+.span-inicio {
+    width: 1100px;
+    top: 14px;
+    left: 140px;
+    font-size: 5rem;
+    letter-spacing: 2rem;
+}
+
+.span-cliente {
+    width: 250px;
+    top: 26px;
+    left: 1177px;
+    font-size: 3.6rem;
+}
+
+form {
+    width: 915px;
+    height: 160px;
+    top: 154px;
+    left: 36px;
+}
+
+label {
+    width: 291px;
+    font-size: 3rem;
+    padding-top: 16px;
+}
+
+.label-izquierda {
+    left: 136px;
+}
+
+.label-derecha {
+    left: 560px;
+}
+
+input {
+    width: 291px;
+    font-size: 2.8rem;
+    top: 100px;
+    border: none;
+    padding-top: 4px;
+}
+
+.input-izquierda {
+    left: 136px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-derecha {
+    left: 560px;
+}
+
+.submit-button {
+    cursor: pointer;
+    width: 271px;
+    top: 260px;
+    left: 360px;
+    font-size: 3.6rem;
+    background: var(--fondo-botones);
+    border-radius: 60px;
+    border: none;
+}

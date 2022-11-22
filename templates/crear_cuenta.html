@@ -1,0 +1,97 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/crear_cuenta.css' %}">
+    <title>Crear cuenta</title>
+    <link rel="icon" href="imgs/logo-solo.ico">
+</head>
+
+<body>
+
+    <main>
+        <a href="{% url 'trukea' %}" class="anchor-return-arrow"></a>
+        <a href="{% url 'trukea' %}" class="anchor-return-text">Volver al inicio</a>
+        <picture></picture>
+
+        <form method="POST" action="{% url 'CrearCuenta' %}">
+            {% csrf_token %}
+            <section action="" class="section-izquierda">
+
+                <label for="nombre" class="label-izquierda label-primero">Nombre (s)</label>
+                <input type="text" id="nombre" name="firstname" class="input-izquierda input-primero" placeholder="Nombre" required>
+
+                <label for="apellido" class="label-izquierda label-segundo">Apellido (s)</label>
+                <input type="text" id="apellido" name="lastname" class="input-izquierda input-segundo" placeholder="Apellido" required>
+
+                <label for="pais" class="label-izquierda label-tercero label-pais">País</label>
+                <input list="paises" id="pais" name="pais" class="input-izquierda input-tercero" placeholder="País" required>
+                <datalist id="paises">
+                    <option value="Colombia"></option>
+                    <option value="Australia"></option>
+                    <option value="Reino Unido"></option>
+                    <option value="Estados Unidos"></option>
+                </datalist>
+
+                <label for="ciudad" class="label-izquierda label-tercero label-ciudad">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" class="input-izquierda input-tercero" placeholder="Bogotá" autocomplete="country-name" required>
+
+                <label for="direccion" class="label-izquierda label-cuarto">Dirección</label>
+                <input type="text" id="direccion" name="direccion" class="input-izquierda input-cuarto" placeholder="Cll 1 # 11-11" required>
+
+            </section>
+
+            <section class="section-centro">
+
+                <label for="tipo_documento" class="label-centro label-primero">Tipo de documento</label>
+                <input list="documentos" id="tipo_documento" name="tipodocumento" class="input-centro input-primero" placeholder="CC" required>
+                <datalist id="documentos">
+                    <option value="CC">Cédula de ciudadanía</option>
+                    <option value="CE">Cédula de extranjería</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </datalist>
+
+                <label for="numero_documento" class="label-centro label-segundo label-numero_documento">Número de documento</label>
+                <input type="number" id="numero_documento" name="documento" class="input-centro input-segundo" autocomplete="cc-number" placeholder="5252525252" required>
+
+                <label for="fecha_expedicion" class="label-centro label-tercero">Fecha de expedición</label>
+                <input type="date" id="fecha_expedicion" name="fechaexpedicion" autocomplete="cc-exp" class="input-centro input-tercero" required>
+
+            </section>
+
+            <section class="section-derecha" >
+
+                <label for="correo" class="label-derecha label-primero">Correo</label>
+                <input type="email" id="correo" name="email"class="input-derecha input-primero" placeholder="Usuario@example.com" required>
+
+                <label for="contrasena" class="label-derecha label-segundo">Contraseña</label>
+                <input type="password" id="contrasena" name="password" placeholder="**********" class="input-derecha input-segundo" required>
+
+                <label for="celular" class="label-derecha label-tercero">Celular</label>
+                <input type="number" id="celular" name="celular" class="input-derecha input-tercero" placeholder="3333333333" required>
+
+                <label for="moneda" class="label-derecha label-cuarto">Moneda local</label>
+                <input list="moneda" id="monedas" name="monedas" class="input-derecha input-cuarto" placeholder="COP" required>
+                <datalist id="moneda">
+                    {% for x in listamonedas %}
+                    <option value="{{x.moneda}}"></option>
+                    {% endfor %}
+                </datalist>
+            
+
+            </section>
+
+            <input type="submit" value="crearcuenta" class="submit-button"/>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

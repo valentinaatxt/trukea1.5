@@ -1,0 +1,59 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/agregar_destinatario.css' %}">
+
+    <title>Agregar destinatario</title>
+    <link rel="icon" href="imgs/logo-solo.ico">
+</head>
+
+<body>
+    <header>
+        <picture></picture>
+        <span class="span-inicio span-header">AGREGAR DESTINATARIO</span>
+        <span class="span-cliente span-header">Cliente</span>
+        <picture></picture>
+    </header>
+
+    <nav>
+        <a href="{% url 'InicioCliente' %}" class="ancle-inicio"></a>
+        <a href="{% url 'EnviarDinero' %}" class="ancle-enviar_dinero"></a>
+        <a href="{% url 'ConsultarListaTransacciones' %}" class="ancle-consulta_lista_transacciones"></a>
+        <a href="{% url 'ClienteTransaccion' %}" class="ancle-consulta_transaccion"></a>
+        <a href="{% url 'EliminarDestinatario' %}" class="ancle-eliminar_destinatario"></a>
+        <a href="{% url 'AgregarDestinatario' %}" class ="ancle-agregar_destinatario"></a>
+        <a href="{% url 'AgregarDinero' %}" class="ancle-agregar_dinero"></a>
+    </nav>
+
+    <main>
+        <section>
+            <p>Agregar destinatario</p>
+            <form method="POST">
+                {% csrf_token %}
+                <label for="email-destinatario" class="label-izquierda label-monto_local">Email</label>
+                <input type="email" id="email-destinatario" name="email" class="input-izquierda" placeholder="usuario@example.com" required>
+
+                <label for="tipdocumento" class="label-centro label-destinatario">Tipo de documento</label>
+                <input list="tipodocumento" id="tipodocumento" class="input-centro" name="tipodocumento" required>
+                <datalist id="tipodocumento">
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="PS">Pasaporte</option>
+                </datalist>
+
+                <label for="numero-documento" class="label-derecha label-fecha">Número de documento</label>
+                <input type="number" id="fecha" name="documento" class="input-derecha" placeholder="1111111111" required>
+
+                <input type="submit" value="agregar" class="submit-button"/>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

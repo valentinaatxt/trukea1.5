@@ -1,0 +1,60 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/agregar_moneda_plataforma.css' %}">
+    <title>Agregar destinatario</title>
+    <link rel="icon" href="imgs/logo-solo.ico">
+</head>
+
+<body>
+    <header>
+        <picture></picture>
+        <span class="span-inicio span-header">AGREGAR MONEDA</span>
+        <span class="span-cliente span-header">Administrador</span>
+        <picture></picture>
+    </header>
+
+    <nav>
+        <a href="{% url 'InicioAdministrador' %}" class="ancle-inicio"></a>
+        <a href="{% url 'ConsultarListaMonedas' %}" class="ancle-enviar_dinero"></a>
+        <a href="{% url 'EditarMoneda' %}" class="ancle-consulta_lista_transacciones"></a>
+        <a href="{% url 'HabilitarDeshabilitarMoneda' %}" class="ancle-consulta_transaccion"></a>
+        <a href="{% url 'ConsultarListaTransacciones' %}" class="ancle-eliminar_destinatario"></a>
+        <a href="{% url 'AgregarMonedaPlataforma' %}" class="ancle-agregar_destinatario"></a>
+        <a href="{% url 'AdminEditarMoneda' %}" class="ancle-agregar_dinero"></a>
+    </nav>
+
+    <main>
+        <section>
+            <p>Agregar moneda</p>
+            <form method="POST">
+                {% csrf_token %}
+                <label for="moneda-agregar" class="label-izquierda label-monto_local">Moneda</label>
+                <input type="text" id="moneda-agregar" name="moneda" class="input-izquierda" placeholder="Peso Colombiano" required>
+
+                <label for="codigo-moneda" class="label-centro label-destinatario">Código</label>
+                <input type="text" id="codigo-moneda" class="input-centro" name="codigomoneda" placeholder="COP" required>
+
+                <label for="tasa-moneda" class="label-derecha label-fecha">Tasa</label>
+                <input type="number" id="tasa-moneda" name="tasa" class="input-derecha" placeholder="2%" required>
+
+                <input type="submit" value="AgregarMonedaPlataforma" class="submit-button"/>
+
+            </form>
+
+        </section>
+
+
+
+    </main>
+
+
+</body>
+
+</html>
